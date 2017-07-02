@@ -133,6 +133,11 @@ export const bg_image = (resolved_image, resolution) => {
 };
 ```
 
+Credits
+=======
+
+Code is based on: https://github.com/boopathi/image-size-loader but wraps url-loader and file-loader.
+
 Development
 ===========
 
