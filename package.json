@@ -1,0 +1,64 @@
+{
+  "name": "sizeof-loader",
+  "version": "0.1.0",
+  "description": "Webpack loader that works like url-loader (or file-loader) but with extracted information such as image dimensions and file-size.",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "repository": "https://github.com/dashed/sizeof-loader",
+  "author": {
+    "name": "Alberto Leal",
+    "email": "mailforalberto@gmail.com",
+    "url": "github.com/dashed"
+  },
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "0.12"
+          }
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "pretty": "prettier --write --tab-width 4 'src/**/*.js' 'test/**/*.js'",
+    "lint": "eslint src test",
+    "test": "mocha --compilers js:babel-register",
+    "prepublish": "npm run lint && npm run test && npm run build",
+    "travis": "npm run lint && npm run test",
+    "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js'"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ]
+  },
+  "dependencies": {
+    "file-loader": "^0.11.2",
+    "image-size": "^0.6.0",
+    "loader-utils": "^1.1.0",
+    "url-loader": "^0.5.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.5.2",
+    "babel-register": "^6.24.1",
+    "chai": "^4.0.2",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.1.1",
+    "mocha": "^3.4.2",
+    "prettier": "^1.5.2"
+  }
+}
