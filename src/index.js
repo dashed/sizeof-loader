@@ -23,7 +23,7 @@ module.exports = function(content) {
 
     const image = sizeOf(resourcePath);
 
-    image.bytes = fs.statSync(resourcePath).size;
+    const bytes = fs.statSync(resourcePath).size;
 
     return `
         ${prefixCode};
@@ -35,8 +35,8 @@ module.exports = function(content) {
             src: src,
             width: ${JSON.stringify(image.width)},
             height: ${JSON.stringify(image.height)},
-            bytes: ${JSON.stringify(image.bytes)},
             type: ${JSON.stringify(image.type)},
+            bytes: ${JSON.stringify(bytes)},
 
             toString: function() {
                 return src;
