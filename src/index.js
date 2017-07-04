@@ -28,18 +28,18 @@ module.exports = function(content) {
     return `
         ${prefixCode};
 
-        var src = module.exports;
+        var src = '' + module.exports;
 
         module.exports = {
 
-            src: '' + src,
+            src: src,
             width: ${JSON.stringify(image.width)},
             height: ${JSON.stringify(image.height)},
             bytes: ${JSON.stringify(image.bytes)},
             type: ${JSON.stringify(image.type)},
 
             toString: function() {
-                return '' + src;
+                return src;
             }
         };
     `;
