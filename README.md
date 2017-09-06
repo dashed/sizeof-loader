@@ -19,19 +19,15 @@ npm install --save-dev sizeof-loader
 // ...
 
 module.exports = {
-
     module: {
-
         rules: [
             {
                 test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
                 use: [
                     {
-                        loader: require.resolve(
-                            "./loaders/custom-image-size-loader"
-                        ),
-                        options: {
+                        loader: "sizeof-loader",
 
+                        options: {
                             // default is false
                             useFileLoader: false,
 
@@ -41,16 +37,15 @@ module.exports = {
                         }
                     }
                 ]
-            },
-        ],
+            }
+        ]
 
         // ...
-
-    },
+    }
 
     // ...
-
 };
+
 ```
 
 ```js
