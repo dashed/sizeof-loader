@@ -19,11 +19,17 @@ module.exports = function(content) {
 
     const wrappedLoader = useFileLoader ? fileLoader : urlLoader;
 
-    const prefixCode = wrappedLoader.call(this, content);
+    let prefixCode = wrappedLoader.call(this, content);
 
     const image = sizeOf(resourcePath);
 
     const bytes = fs.statSync(resourcePath).size;
+
+    if (prefixCode.startsWith("export default")) {
+        prefixCode = `module.exports = ${prefixCode.substring(
+            "export default".length
+        )}`;
+    }
 
     return `
         ${prefixCode};
