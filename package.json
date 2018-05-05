@@ -1,6 +1,6 @@
 {
   "name": "sizeof-loader",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Webpack loader that works like url-loader (or file-loader) but with extracted information such as image dimensions and file-size.",
   "files": [
     "dist"
