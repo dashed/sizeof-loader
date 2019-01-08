@@ -1385,9 +1385,10 @@ ignore@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.3.tgz#432352e57accd87ab3110e82d3fea0e47812156d"
 
-image-size@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.0.tgz#abd59fe0877f29a248ef2dd90f783bf57f4c61a7"
+image-size@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.7.0.tgz#1ac3de4eaaee0386f19ba6b19d479e02fc060de7"
+  integrity sha512-oWhJUMBxKQhmdSUPw+bcU+JC9pUMBbLnDPIZCFxZWGajV2HCRA5n+fHCCT3qDPGbGVEwP2cYTP2efsSk8j0YKA==
 
 imurmurhash@^0.1.4:
   version "0.1.4"
