@@ -1,4 +1,4 @@
-sizeof-loader [![Build Status](https://github.com/dashed/sizeof-loader/workflows/node.js/badge.svg)](https://github.com/dashed/sizeof-loader/actions?workflow=node.js) [![npm version](https://img.shields.io/npm/v/sizeof-loader.svg?style=flat)](https://www.npmjs.com/package/sizeof-loader)
+sizeof-loader [![Build Status](https://github.com/dashed/sizeof-loader/workflows/Node.js CI/badge.svg)](https://github.com/dashed/sizeof-loader/actions?workflow=Node.js CI) [![npm version](https://img.shields.io/npm/v/sizeof-loader.svg?style=flat)](https://www.npmjs.com/package/sizeof-loader)
 ==============
 
 > Webpack loader that works like [`url-loader`](https://github.com/webpack-contrib/url-loader) (or [`file-loader`](https://github.com/webpack-contrib/file-loader)) but with extracted information such as image dimensions and file-size.
