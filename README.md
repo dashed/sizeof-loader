@@ -1,7 +1,5 @@
-sizeof-loader [![Build Status](https://travis-ci.org/dashed/sizeof-loader.svg)](https://travis-ci.org/dashed/sizeof-loader) [![npm version](https://img.shields.io/npm/v/sizeof-loader.svg?style=flat)](https://www.npmjs.com/package/sizeof-loader)
+sizeof-loader [![Build Status](https://github.com/dashed/advent-of-code/workflows/node.js/badge.svg)](https://github.com/dashed/advent-of-code/actions?workflow=node.js) [![npm version](https://img.shields.io/npm/v/sizeof-loader.svg?style=flat)](https://www.npmjs.com/package/sizeof-loader)
 ==============
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/dashed/sizeof-loader.svg)](https://greenkeeper.io/)
 
 > Webpack loader that works like [`url-loader`](https://github.com/webpack-contrib/url-loader) (or [`file-loader`](https://github.com/webpack-contrib/file-loader)) but with extracted information such as image dimensions and file-size.
 
