@@ -35,7 +35,7 @@ describe("sizeof-loader", function() {
 
         const output = eval(`var __webpack_public_path__ = '';${result}`);
 
-        const expected_src = `260e08ee5bfbda311a0804ff1414112d.jpeg`;
+        const expected_src = `5fde3d7d7643c6698ef5d04b7eda2c13.jpeg`;
 
         expect(output.src).to.equal(expected_src);
         expect(output.width).to.equal(80);
@@ -63,7 +63,7 @@ describe("sizeof-loader", function() {
 
         const output = eval(`var __webpack_public_path__ = '';${result}`);
 
-        const expected_src = `260e08ee5bfbda311a0804ff1414112d.jpeg`;
+        const expected_src = `5fde3d7d7643c6698ef5d04b7eda2c13.jpeg`;
 
         expect(output.src).to.equal(expected_src);
         expect(output.width).to.equal(80);
